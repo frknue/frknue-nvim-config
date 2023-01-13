@@ -1,3 +1,3 @@
 -- import lspsaga safely
 
-saga = require('lspsaga').setup({})
+local saga = require("lspsaga").setup({})
