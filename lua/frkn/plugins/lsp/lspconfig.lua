@@ -115,3 +115,9 @@ lspconfig["pyright"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
+
+-- configure Go server
+lspconfig["gopls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
