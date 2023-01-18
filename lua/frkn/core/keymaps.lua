@@ -7,8 +7,6 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps
 ---------------------
 
--- jump to end of line
-keymap.set("n", "1", "$")
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
