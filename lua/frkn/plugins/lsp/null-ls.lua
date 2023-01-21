@@ -17,7 +17,9 @@ null_ls.setup({
   sources = {
     --  to disable file types use
     --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-    formatting.prettier, -- js/ts formatter
+    formatting.prettier.with({
+      extra_args = { "--tab-width=4" },
+    }), -- js/ts formatter
     formatting.stylua, -- lua formatter
     diagnostics.eslint_d.with({ -- js/ts linter
       -- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
@@ -32,8 +34,6 @@ null_ls.setup({
       vim.keymap.set("n", "<Leader>fm", function()
       vim.lsp.buf.format({ bufnr = vim.api.nvim_get_current_buf() })
       end, { buffer = bufnr, desc = "[lsp] format" })
-
-      
     end
   end,
 })
