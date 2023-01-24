@@ -45,9 +45,6 @@ return packer.startup(function(use)
   -- toggle terminal
   use("akinsho/toggleterm.nvim")
 
-  -- auto sessions
-  use("rmagatti/auto-session") -- auto save & restore sessions
-
   -- commenting with gc
   use("numToStr/Comment.nvim")
 
