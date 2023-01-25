@@ -133,3 +133,9 @@ lspconfig["rust_analyzer"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
+
+-- configure powershell server
+lspconfig["powershell-editor-services"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
