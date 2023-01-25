@@ -36,9 +36,6 @@ keymap.set("n", "<leader>p", ":b#<CR>") -- open previous buffer
 ----------------------
 -- Plugin Keybinds
 ----------------------
--- Gitsigns
-
-keymap.set("n", "<leader>hb", ":Gitsigns toggle_current_line_blame<CR>")
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
