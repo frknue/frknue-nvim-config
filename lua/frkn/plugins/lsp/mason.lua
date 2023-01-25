@@ -28,7 +28,10 @@ mason_lspconfig.setup({
     "tailwindcss",
     "emmet_ls",
     "sumneko_lua",
-    "pyright"
+    "pyright",
+    "rust_analyzer",
+    "gopls",
+    "omnisharp",
   },
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed
