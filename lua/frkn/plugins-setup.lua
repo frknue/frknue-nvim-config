@@ -33,9 +33,9 @@ return packer.startup(function(use)
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-  use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+  use({ "ellisonleao/gruvbox.nvim" })
 
-  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+  use("christoomey/vim-tmux-navigator")
 
   use("szw/vim-maximizer") -- maximizes and restores current window
 
@@ -45,9 +45,6 @@ return packer.startup(function(use)
   -- toggle terminal
   use("akinsho/toggleterm.nvim")
 
-  -- auto sessions
-  use("rmagatti/auto-session") -- auto save & restore sessions
-  
   -- commenting with gc
   use("numToStr/Comment.nvim")
 
