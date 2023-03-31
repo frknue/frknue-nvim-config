@@ -37,6 +37,9 @@ keymap.set("n", "<leader>p", ":b#<CR>") -- open previous buffer
 -- Plugin Keybinds
 ----------------------
 
+-- Open ChatGPT
+keymap.set("n", "<leader>gpt", ":ChatGPT<CR>")
+
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
