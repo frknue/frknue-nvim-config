@@ -52,7 +52,18 @@ return packer.startup(function(use)
   use("numToStr/Comment.nvim")
 
   -- file explorer
-  use("nvim-tree/nvim-tree.lua")
+  use({
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require("nvim-tree").setup({
+        auto_open = true,
+        auto_close = true,
+        update_focused_file = {
+          enable = true,
+        },
+      })
+    end,
+  })
 
   -- vs-code like icons
   use("nvim-tree/nvim-web-devicons")
