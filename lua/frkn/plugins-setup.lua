@@ -56,8 +56,6 @@ return packer.startup(function(use)
     "nvim-tree/nvim-tree.lua",
     config = function()
       require("nvim-tree").setup({
-        auto_open = true,
-        auto_close = true,
         update_focused_file = {
           enable = true,
         },
@@ -143,7 +141,6 @@ return packer.startup(function(use)
   -- LightSpeed
   use("ggandor/lightspeed.nvim")
   -- barbar.nvim
-  use 'nvim-tree/nvim-web-devicons'
   use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 
   if packer_bootstrap then
