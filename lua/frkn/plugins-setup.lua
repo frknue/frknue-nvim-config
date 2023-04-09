@@ -140,8 +140,15 @@ return packer.startup(function(use)
 
   -- LightSpeed
   use("ggandor/lightspeed.nvim")
-  -- barbar.nvim
-  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+  -- nvim navbuddy
+  use({
+    "SmiteshP/nvim-navbuddy",
+    requires = {
+      "neovim/nvim-lspconfig",
+      "SmiteshP/nvim-navic",
+      "MunifTanjim/nui.nvim",
+    },
+  })
 
   if packer_bootstrap then
     require("packer").sync()
