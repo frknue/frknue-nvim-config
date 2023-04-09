@@ -65,3 +65,6 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 
 -- ToggleTerm
 keymap.set("n", "<leader>tt", ":ToggleTerm<CR>") -- toggle terminal
+
+-- centerpad
+keymap.set("n", "<leader>zz", ":Centerpad<CR>") -- center buffer

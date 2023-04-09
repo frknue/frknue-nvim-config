@@ -149,6 +149,10 @@ return packer.startup(function(use)
       "MunifTanjim/nui.nvim",
     },
   })
+  -- neoscroll
+  use({ "karb94/neoscroll.nvim", config = function() require("neoscroll").setup() end })
+  -- centerpad
+  use { 'smithbm2316/centerpad.nvim' }
 
   if packer_bootstrap then
     require("packer").sync()
