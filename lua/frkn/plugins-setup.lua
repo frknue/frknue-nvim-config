@@ -150,9 +150,16 @@ return packer.startup(function(use)
     },
   })
   -- neoscroll
-  use({ "karb94/neoscroll.nvim", config = function() require("neoscroll").setup() end })
+  use({
+    "karb94/neoscroll.nvim",
+    config = function()
+      require("neoscroll").setup()
+    end,
+  })
   -- centerpad
-  use { 'smithbm2316/centerpad.nvim' }
+  use({ "smithbm2316/centerpad.nvim" })
+  -- indendt blankline
+  use("lukas-reineke/indent-blankline.nvim")
 
   if packer_bootstrap then
     require("packer").sync()
