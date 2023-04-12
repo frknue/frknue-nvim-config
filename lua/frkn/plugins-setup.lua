@@ -158,8 +158,18 @@ return packer.startup(function(use)
   })
   -- centerpad
   use({ "smithbm2316/centerpad.nvim" })
-  -- indendt blankline
-  use("lukas-reineke/indent-blankline.nvim")
+
+  -- dashboard-nvim
+  use({
+    "glepnir/dashboard-nvim",
+    event = "VimEnter",
+    config = function()
+      require("dashboard").setup({
+        -- config
+      })
+    end,
+    requires = { "nvim-tree/nvim-web-devicons" },
+  })
 
   if packer_bootstrap then
     require("packer").sync()
