@@ -115,20 +115,20 @@ return packer.startup(function(use)
       ts_update()
     end,
   })
-  -- ChatGPT Plugin
-  -- Packer
+
+  -- telescope toggleterm
   use({
-    "jackMort/ChatGPT.nvim",
-    config = function()
-      require("chatgpt").setup({
-        -- optional configuration
-      })
-    end,
+    "https://git.sr.ht/~havi/telescope-toggleterm.nvim",
+    event = "TermOpen",
     requires = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
+      "akinsho/nvim-toggleterm.lua",
       "nvim-telescope/telescope.nvim",
+      "nvim-lua/popup.nvim",
+      "nvim-lua/plenary.nvim",
     },
+    config = function()
+      require("telescope").load_extension("toggleterm")
+    end,
   })
 
   -- auto closing
