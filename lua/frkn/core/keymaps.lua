@@ -7,6 +7,9 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps
 ---------------------
 
+-- Jump up and down by visual lines
+keymap.set("n", "<Up>", "10k")
+keymap.set("n", "<Down>", "10j")
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
@@ -38,7 +41,7 @@ keymap.set("n", "<leader>p", ":b#<CR>") -- open previous buffer
 ----------------------
 
 -- Open ChatGPT
-keymap.set("n", "<leader>gpt", ":ChatGPT<CR>") 
+keymap.set("n", "<leader>gpt", ":ChatGPT<CR>")
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
