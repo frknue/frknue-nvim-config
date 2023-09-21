@@ -107,6 +107,12 @@ return {
 			},
 		})
 
+		-- configure svelete server
+		lspconfig["svelte"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure css server
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
@@ -143,6 +149,12 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+		})
+
+		-- go language server
+		lspconfig["gopls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
 		})
 
 		-- configure lua server (with special settings)

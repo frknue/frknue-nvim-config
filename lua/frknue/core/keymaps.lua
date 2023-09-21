@@ -39,5 +39,17 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Buffer management
 keymap.set("n", "<leader>pp", ":e#<CR>") -- open previous buffer
-keymap.set("n", "<leader>p", ":b#<CR>") -- open previous buffer
+
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+
+-- greatest remap ever
+vim.keymap.set("x", "<C-p>", [["_dP]])
+
 -------------------

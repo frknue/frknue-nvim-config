@@ -48,3 +48,8 @@ vim.cmd("highlight Cursor guibg=blue guifg=white")
 
 opt.background = "dark"
 opt.signcolumn = "yes"
+
+function ColorMyPencils()
+	vim.api.nvim_set_hl(0, "normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "normalFloat", { bg = "none" })
+end
