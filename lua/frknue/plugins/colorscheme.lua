@@ -1,10 +1,10 @@
 return {
 	{
-		"ellisonleao/gruvbox.nvim",
+		"bluz71/vim-nightfly-guicolors",
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
-			vim.o.background = "dark" -- or "light" for light mode
-			vim.cmd([[colorscheme gruvbox]])
+			-- load the colorscheme here
+			vim.cmd([[colorscheme nightfly]])
 		end,
 	},
 }
